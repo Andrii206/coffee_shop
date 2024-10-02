@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header second">
+        <div class="header-container">
+            <div class="header-content">
+                <nav class="main-nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about_us.html">Про нас</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                    <ul class="nav-menu">
+                        <li class="search-container">
+                            <a href="#" class="nav-icon-search">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <input type="text" class="search-input" placeholder="Пошук...">
+                        </li>       
+                        <li><a href="shop.html">Магазин</a></li>
+                        <li><a href="#">Заявка</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-3 image-container">
+                    <div class="part_of_blog">
+                        <img src="assets/images/cup_of_coffee_color.png" class="image-bg">
+                        <div class="content">
+                            <h5>Кава</h5>
+                            <p>Кожен етап нашого виробничого процесу, від постачання до обсмажування та змішування, має
+                                на меті забезпечити неперевершену насолоду від кожного ковтка напою.</p>
+                            <hr>
+                            <div class="custom-button">
+                                <span>Bucksley</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 image-container">
+                    <div class="part_of_blog">
+                        <img src="assets/images/cup_of_coffee.png" class="image-bg">
+                        <div class="content">
+                            <h5>Кава</h5>
+                            <p>Кожен етап нашого виробничого процесу, від постачання до обсмажування та змішування, має
+                                на меті забезпечити неперевершену насолоду від кожного ковтка напою.</p>
+                            <hr>
+                            <div class="custom-button">
+                                <span>Bucksley</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 image-container">
+                    <div class="part_of_blog">
+                        <img src="assets/images/cup_of_coffee.png" class="image-bg">
+                        <div class="content">
+                            <h5>Кава</h5>
+                            <p>Кожен етап нашого виробничого процесу, від постачання до обсмажування та змішування, має
+                                на меті забезпечити неперевершену насолоду від кожного ковтка напою.</p>
+                            <hr>
+                            <div class="custom-button">
+                                <span>Bucksley</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 image-container">
+                    <div class="part_of_blog">
+                        <img src="assets/images/cup_of_coffee.png" class="image-bg">
+                        <div class="content">
+                            <h5>Кава</h5>
+                            <p>Кожен етап нашого виробничого процесу, від постачання до обсмажування та змішування, має
+                                на меті забезпечити неперевершену насолоду від кожного ковтка напою.</p>
+                            <hr>
+                            <div class="custom-button">
+                                <span>Bucksley</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <form class="filter-section" method="GET" active="/search">
+                        <!-- Ціна -->
+                        <div class="filter-title" onclick="toggleFilter('price-filter')">
+                            <span>Ціна</span>
+                            <span class="icon">
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 7L15 12L10 17" stroke="#000000" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div id="price-filter" class="filter-content">
+                            <div class="price-input">
+                                <div>
+                                    <label for="min_price">Від:</label>
+                                    <input type="number" id="min_price" name="min_price" placeholder="25 ₴" min="0" />
+                                </div>
+                                <div>
+                                    <label for="max_price">До:</label>
+                                    <input type="number" id="max_price" name="max_price" placeholder="3385 ₴" min="0" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Рейтинг -->
+                        <div class="filter-title" onclick="toggleFilter('rating-filter')">
+                            <span>Рейтинг</span>
+                            <span class="icon">
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 7L15 12L10 17" stroke="#000000" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div id="rating-filter" class="filter-content">
+                            <label class="rating-stars filter-checkbox">
+                                <input type="checkbox" name="rating[]" value="5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                            </label>
+
+                            <label class="rating-stars filter-checkbox">
+                                <input type="checkbox" name="rating[]" value="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                            </label>
+
+                            <label class="rating-stars filter-checkbox">
+                                <input type="checkbox" name="rating[]" value="3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                            </label>
+
+                            <label class="rating-stars filter-checkbox">
+                                <input type="checkbox" name="rating[]" value="2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                            </label>
+
+                            <label class="rating-stars filter-checkbox">
+                                <input type="checkbox" name="rating[]" value="1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star active">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon star">
+                                    <polygon
+                                        points="12 2 15 8.5 22 9.5 17 14 18.5 21 12 17.5 5.5 21 7 14 2 9.5 9 8.5 12 2" />
+                                </svg>
+                            </label>
+                        </div>
+
+                        <!-- Тип кави -->
+                        <div class="filter-title" onclick="toggleFilter('coffee-type-filter')">
+                            <span>Тип кави</span>
+                            <span class="icon">
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 7L15 12L10 17" stroke="#000000" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div id="coffee-type-filter" class="filter-content">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="coffee_type[]" value="mono">
+                                <span>Моно сорта</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="coffee_type[]" value="blend"><span>Бленди</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="coffee_type[]" value="aromatic"><span>Ароматизована</span>
+                            </label>
+                            <a href="#" class="show-more">Показати більше</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-9">
+                    <div>
+                        <span style="color:#D1D2D1;">BUCKSLEY
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 7L15 12L10 17" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span><span>Кава</span>
+                    </div>
+                    <div class="shop_title">
+                        <h4>Кава</h4>
+                    </div>
+                    <div class="shop_sort">
+                        <span>Сортування:</span>
+                        <ul class="filter-options">
+                            <li class="filter-item">Дешевше</li>
+                            <li class="filter-item">Дорожче</li>
+                            <li class="filter-item">Популярнi</li>
+                            <li class="filter-item">Акцiї</li>
+                            <li class="filter-item">Новинки</li>
+                            <li class="filter-item">Доступно до самовивезення</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 part_of_store_goods">
+                            <div class="part_of_store_content_image image-container">
+                                <img src="assets/images/rectangle.png" alt="rectangle" class="image-bg">
+
+                                <svg class="content heart-icon" width="20px" height="20px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke="currentColor" fill="" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="part_of_store_content_description">
+                                <h6>Bucksley Bonito</h6>
+                                <p>50% арабіка/50% рабуст</p>
+                                <span>900 грн</span>
+                                <a href="single-post.html"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 part_of_store_goods">
+                            <div class="part_of_store_content_image image-container">
+                                <img src="assets/images/rectangle.png" alt="rectangle" class="image-bg">
+
+                                <svg class="content heart-icon" width="20px" height="20px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke="currentColor" fill="" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="part_of_store_content_description">
+                                <h6>Bucksley Bonito</h6>
+                                <p>50% арабіка/50% рабуст</p>
+                                <span>900 грн</span>
+                                <a href="single-post.html"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 part_of_store_goods">
+                            <div class="part_of_store_content_image image-container">
+                                <img src="assets/images/rectangle.png" alt="rectangle" class="image-bg">
+
+                                <svg class="content heart-icon" width="20px" height="20px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke="currentColor" fill="" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="part_of_store_content_description">
+                                <h6>Bucksley Bonito</h6>
+                                <p>50% арабіка/50% рабуст</p>
+                                <span>900 грн</span>
+                                <a href="single-post.html"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 part_of_store_goods">
+                            <div class="part_of_store_content_image image-container">
+                                <img src="assets/images/rectangle.png" alt="rectangle" class="image-bg">
+
+                                <svg class="content heart-icon" width="20px" height="20px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke="currentColor" fill="" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="part_of_store_content_description">
+                                <h6>Bucksley Bonito</h6>
+                                <p>50% арабіка/50% рабуст</p>
+                                <span>900 грн</span>
+                                <a href="single-post.html"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 part_of_store_goods">
+                            <div class="part_of_store_content_image image-container">
+                                <img src="assets/images/rectangle.png" alt="rectangle" class="image-bg">
+
+                                <svg class="content heart-icon" width="20px" height="20px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke="currentColor" fill="" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="part_of_store_content_description">
+                                <h6>Bucksley Bonito</h6>
+                                <p>50% арабіка/50% рабуст</p>
+                                <span>900 грн</span>
+                                <a href="single-post.html"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 part_of_store_goods">
+                            <div class="part_of_store_content_image image-container">
+                                <img src="assets/images/rectangle.png" alt="rectangle" class="image-bg">
+
+                                <svg class="content heart-icon" width="20px" height="20px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke="currentColor" fill="" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="part_of_store_content_description">
+                                <h6>Bucksley Bonito</h6>
+                                <p>50% арабіка/50% рабуст</p>
+                                <span>900 грн</span>
+                                <a href="single-post.html"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 part_of_store_goods">
+                            <div class="part_of_store_content_image image-container">
+                                <img src="assets/images/rectangle.png" alt="rectangle" class="image-bg">
+
+                                <svg class="content heart-icon" width="20px" height="20px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke="currentColor" fill="" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="part_of_store_content_description">
+                                <h6>Bucksley Bonito</h6>
+                                <p>50% арабіка/50% рабуст</p>
+                                <span>900 грн</span>
+                                <a href="single-post.html"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="#" class="prev">&laquo;</a>
+                        <a href="#" class="page active">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#" class="page">4</a>
+                        <a href="#" class="page">...</a>
+                        <a href="#" class="page">9</a>
+                        <a href="#" class="next">&raquo;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="image-container">
+        <img src="assets/images/background_image.png" class="image-bg">
+        <div class="coffee_bean content">
+            <img src="assets/images/coffee_bean.png" alt="coffee bean" class="bean">
+            <hr class="divider">
+            <div class="coffee_bean_social_networks_title">
+                <span>Ми в соціальних мережах!</span>
+                <p>Підписуйтесь та дізнавайтесь першим про всі новинки, акції і пропозиції. Також не пропускайте цікаві
+                    статті зі світу кави</p>
+            </div>
+            <div class="coffee_bean_social_networks_content">
+                <a href="#">Whatsapp</a>
+                <hr class="divider">
+                <span> ©2024, Bucksley</span>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
